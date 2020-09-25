@@ -1,6 +1,6 @@
 # nio-exchange
 
-This script calculates the free energy of NiO in various magnetic configurations (Non-Spin Polarized, Ferromagnetic, AF1, AF2).
+Running exchange.sh calculates the free energy of NiO in various magnetic configurations (Non-Spin Polarized, Ferromagnetic, AF1, AF2).
 
 I used 4 methods to overcome any possible convergence issues for each configuration
 
@@ -8,6 +8,7 @@ I used 4 methods to overcome any possible convergence issues for each configurat
 2. Continue from WAVECAR generated during non-spin polarized calculation.
 3. Continue from CHGCAR generated during non-spin polarized calculation.
 4. Continue from both WAVECAR and CHGCAR generated during non-spin polarized calculation.
+
 
 Final Magnetic moments are as below:
 
