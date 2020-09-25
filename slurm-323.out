@@ -1,0 +1,1135 @@
+ERROR: No such file or directory on '/share/apps/modulefiles/vasp/5.4.4-p1-cuda10-intel19'
+ERROR: No such file or directory on '/share/apps/modulefiles/openmpi/4.0.1-intel19'
+ERROR: No such file or directory on '/share/apps/modulefiles/intel_compilers/19.0up4'
+ERROR: No such file or directory on '/share/apps/modulefiles/openmpi/4.0.1-intel19'
+ERROR: No such file or directory on '/share/apps/modulefiles/cuda/10.1'
+ERROR: No such file or directory on '/share/apps/modulefiles/intel_compilers/19.0up4'
+ERROR: Unable to locate a modulefile for 'vasp/5.4.4-p1-cuda10-intel19'
+[1;31m*** Non-spin polarized base calculation ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.223207216600E+05    0.22321E+05   -0.38690E+05  4336   0.205E+04
+DAV:   2    -0.142776083695E+05   -0.36598E+05   -0.32873E+05  4176   0.433E+03
+DAV:   3    -0.245229885110E+05   -0.10245E+05   -0.99463E+04  5088   0.924E+02
+DAV:   4    -0.262528179922E+05   -0.17298E+04   -0.16327E+04  5344   0.434E+02
+DAV:   5    -0.264567989726E+05   -0.20398E+03   -0.18646E+03  5488   0.163E+02    0.116E+03
+DAV:   6    -0.413563042413E+04    0.22321E+05   -0.30473E+04  4928   0.114E+03    0.745E+02
+DAV:   7    -0.438661696291E+04   -0.25099E+03   -0.48046E+04  5704   0.269E+03    0.452E+02
+DAV:   8    -0.158537431404E+04    0.28012E+04   -0.34654E+04  5232   0.283E+03    0.475E+02
+DAV:   9    -0.886546578465E+03    0.69883E+03   -0.15563E+04  5592   0.111E+03    0.238E+02
+DAV:  10    -0.145887177524E+04   -0.57233E+03   -0.44083E+03  6600   0.488E+02    0.338E+02
+DAV:  11    -0.672685019365E+03    0.78619E+03   -0.86553E+02  5464   0.456E+02    0.214E+02
+DAV:  12    -0.417224233672E+03    0.25546E+03   -0.61027E+02  5880   0.429E+02    0.801E+01
+DAV:  13    -0.433144399237E+03   -0.15920E+02   -0.16054E+02  7024   0.126E+02    0.763E+01
+DAV:  14    -0.459531325143E+03   -0.26387E+02   -0.45190E+01  7104   0.717E+01    0.762E+01
+DAV:  15    -0.471941451817E+03   -0.12410E+02   -0.97456E+00  6512   0.360E+01    0.915E+01
+DAV:  16    -0.414177902364E+03    0.57764E+02   -0.92724E+01  5576   0.669E+01    0.514E+01
+DAV:  17    -0.397154945056E+03    0.17023E+02   -0.29433E+01  6520   0.693E+01    0.341E+01
+DAV:  18    -0.393470176400E+03    0.36848E+01   -0.95191E+00  6856   0.308E+01    0.256E+01
+DAV:  19    -0.392120796506E+03    0.13494E+01   -0.26426E+00  6848   0.113E+01    0.198E+01
+DAV:  20    -0.392147977134E+03   -0.27181E-01   -0.23848E+00  7104   0.812E+00    0.159E+01
+DAV:  21    -0.391994730216E+03    0.15325E+00   -0.73120E-01  6272   0.132E+01    0.971E+00
+DAV:  22    -0.392024069507E+03   -0.29339E-01   -0.24744E-01  5648   0.562E+00    0.396E+00
+DAV:  23    -0.391985814829E+03    0.38255E-01   -0.28451E-01  5600   0.702E+00    0.284E+00
+DAV:  24    -0.392057993370E+03   -0.72179E-01   -0.33735E-01  6264   0.938E+00    0.249E+00
+DAV:  25    -0.391974482952E+03    0.83510E-01   -0.11411E-01  5920   0.638E+00    0.913E-01
+DAV:  26    -0.391968883184E+03    0.55998E-02   -0.32418E-02  6672   0.198E+00    0.206E-01
+DAV:  27    -0.391971837019E+03   -0.29538E-02   -0.13922E-02  5744   0.213E+00    0.579E-01
+DAV:  28    -0.391968270601E+03    0.35664E-02   -0.89786E-03  6328   0.190E+00    0.167E-01
+DAV:  29    -0.391968118974E+03    0.15163E-03   -0.23413E-03  6696   0.610E-01    0.117E-01
+DAV:  30    -0.391968138987E+03   -0.20013E-04   -0.27117E-04  6432   0.137E-01    0.986E-02
+DAV:  31    -0.391968146424E+03   -0.74374E-05   -0.44215E-05  5256   0.554E-02    0.242E-02
+DAV:  32    -0.391968145151E+03    0.12736E-05   -0.23488E-05  4992   0.914E-02    0.204E-02
+DAV:  33    -0.391968147742E+03   -0.25916E-05   -0.12623E-05  4512   0.436E-02    0.152E-02
+DAV:  34    -0.391968146880E+03    0.86200E-06   -0.43008E-06  3152   0.465E-02
+   1 F= -.39196815E+03 E0= -.39196794E+03  d E =-.411535E-03
+ writing wavefunctions
+[1;31m*** FM calculation is performed from scratch ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.323931825692E+05    0.32393E+05   -0.21591E+05  9120   0.580E+03
+DAV:   2     0.125831401486E+05   -0.19810E+05   -0.17551E+05  9592   0.212E+03
+DAV:   3     0.342813947947E+04   -0.91550E+04   -0.84809E+04 11496   0.113E+03
+DAV:   4     0.555403584628E+03   -0.28727E+04   -0.26142E+04 15084   0.940E+02
+DAV:   5    -0.209883613888E+03   -0.76529E+03   -0.64584E+03 15280   0.618E+02    0.127E+02
+DAV:   6    -0.339328474204E+03   -0.12944E+03   -0.23024E+03 15176   0.463E+02    0.345E+01
+DAV:   7    -0.381433299462E+03   -0.42105E+02   -0.66408E+02 12740   0.290E+02    0.205E+01
+DAV:   8    -0.390897900306E+03   -0.94646E+01   -0.16226E+02 15208   0.121E+02    0.163E+01
+DAV:   9    -0.392562178065E+03   -0.16643E+01   -0.29601E+01 12896   0.704E+01    0.859E+00
+DAV:  10    -0.393029935533E+03   -0.46776E+00   -0.58726E+00 15544   0.173E+01    0.424E+00
+DAV:  11    -0.393139385695E+03   -0.10945E+00   -0.82752E-01 15008   0.895E+00    0.284E+00
+DAV:  12    -0.393177353955E+03   -0.37968E-01   -0.14927E-01 13936   0.478E+00    0.126E+00
+DAV:  13    -0.393191403574E+03   -0.14050E-01   -0.68182E-02 14872   0.207E+00    0.508E-01
+DAV:  14    -0.393192634570E+03   -0.12310E-02   -0.76037E-03 13216   0.965E-01    0.126E-01
+DAV:  15    -0.393192950033E+03   -0.31546E-03   -0.16312E-03 14592   0.312E-01    0.799E-02
+DAV:  16    -0.393192988725E+03   -0.38693E-04   -0.22290E-04 14792   0.139E-01    0.404E-02
+DAV:  17    -0.393193001556E+03   -0.12831E-04   -0.66296E-05 13512   0.646E-02    0.124E-02
+DAV:  18    -0.393193004268E+03   -0.27121E-05   -0.12406E-05  9368   0.339E-02    0.451E-03
+DAV:  19    -0.393193006756E+03   -0.24879E-05   -0.41750E-06  6864   0.198E-02    0.272E-03
+DAV:  20    -0.393193009073E+03   -0.23172E-05   -0.13623E-06  6232   0.129E-02    0.133E-03
+DAV:  21    -0.393193009467E+03   -0.39354E-06   -0.76165E-07  6080   0.941E-03
+   1 F= -.39319301E+03 E0= -.39319293E+03  d E =-.154600E-03  mag=    48.0745
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F2B38BCFB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[1048,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** FM calculation continues from WAVECAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of bands has changed, file:   460 present:   492
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          461
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.559290363204E+03   -0.55929E+03   -0.23009E+02 13304   0.179E+02    0.150E+02
+DAV:   2    -0.438381763268E+03    0.12091E+03   -0.73968E+02 10696   0.495E+02    0.116E+02
+DAV:   3    -0.380134211008E+03    0.58248E+02   -0.31679E+02 10880   0.419E+02    0.307E+01
+DAV:   4    -0.391407585136E+03   -0.11273E+02   -0.14312E+02 15424   0.811E+01    0.149E+01
+DAV:   5    -0.392949272267E+03   -0.15417E+01   -0.17464E+01 12800   0.404E+01    0.856E+00
+DAV:   6    -0.393170686671E+03   -0.22141E+00   -0.40664E+00 14928   0.106E+01    0.311E+00
+DAV:   7    -0.393193551252E+03   -0.22865E-01   -0.32169E-01 14432   0.542E+00    0.119E+00
+DAV:   8    -0.393200763731E+03   -0.72125E-02   -0.49515E-02 14472   0.170E+00    0.645E-01
+DAV:   9    -0.393200773664E+03   -0.99333E-05   -0.53624E-03 14776   0.586E-01    0.317E-01
+DAV:  10    -0.393201050275E+03   -0.27661E-03   -0.17226E-03 14672   0.333E-01    0.612E-02
+DAV:  11    -0.393201086455E+03   -0.36180E-04   -0.21624E-04 13392   0.137E-01    0.254E-02
+DAV:  12    -0.393201113163E+03   -0.26708E-04   -0.43840E-05 13416   0.506E-02    0.107E-02
+DAV:  13    -0.393201118895E+03   -0.57315E-05   -0.41507E-06  7536   0.251E-02    0.620E-03
+DAV:  14    -0.393201120465E+03   -0.15704E-05   -0.10347E-06  5920   0.141E-02    0.184E-03
+DAV:  15    -0.393201120372E+03    0.93278E-07   -0.68666E-07  5712   0.119E-02
+   1 F= -.39320112E+03 E0= -.39320099E+03  d E =-.250751E-03  mag=    39.1110
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007FBFF952FB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[4874,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** FM calculation continues from CHGCAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.323434652971E+05    0.32343E+05   -0.22244E+05  9232   0.639E+03
+DAV:   2     0.123117497339E+05   -0.20032E+05   -0.17620E+05  9472   0.223E+03
+DAV:   3     0.320233892443E+04   -0.91094E+04   -0.85445E+04 11440   0.110E+03
+DAV:   4     0.483059168754E+03   -0.27193E+04   -0.25249E+04 14880   0.900E+02
+DAV:   5    -0.137894744873E+03   -0.62095E+03   -0.54450E+03 15264   0.566E+02    0.107E+02
+DAV:   6    -0.396923414877E+03   -0.25903E+03   -0.25220E+03 14872   0.551E+02    0.772E+01
+DAV:   7    -0.392626009942E+03    0.42974E+01   -0.10214E+03 13320   0.357E+02    0.501E+01
+DAV:   8    -0.403725396698E+03   -0.11099E+02   -0.21811E+02 14752   0.116E+02    0.429E+01
+DAV:   9    -0.400052189769E+03    0.36732E+01   -0.31638E+01 14584   0.419E+01    0.348E+01
+DAV:  10    -0.393097827395E+03    0.69544E+01   -0.14220E+01 15560   0.296E+01    0.125E+01
+DAV:  11    -0.392829411519E+03    0.26842E+00   -0.41135E+00 14560   0.176E+01    0.107E+01
+DAV:  12    -0.392994514829E+03   -0.16510E+00   -0.71750E-01 13984   0.836E+00    0.832E+00
+DAV:  13    -0.392990220919E+03    0.42939E-02   -0.15373E-01 13760   0.333E+00    0.658E+00
+DAV:  14    -0.392951915345E+03    0.38306E-01   -0.17888E-01 13392   0.770E+00    0.671E+00
+DAV:  15    -0.393071355481E+03   -0.11944E+00   -0.14701E-01 14256   0.622E+00    0.380E+00
+DAV:  16    -0.393119879416E+03   -0.48524E-01   -0.71632E-02 15384   0.266E+00    0.248E+00
+DAV:  17    -0.393150985978E+03   -0.31107E-01   -0.16139E-02 15160   0.157E+00    0.226E+00
+DAV:  18    -0.393181536273E+03   -0.30550E-01   -0.84666E-03 14904   0.125E+00    0.168E+00
+DAV:  19    -0.393191793635E+03   -0.10257E-01   -0.25692E-02 14848   0.258E+00    0.532E-01
+DAV:  20    -0.393192716779E+03   -0.92314E-03   -0.73337E-03 14992   0.635E-01    0.361E-01
+DAV:  21    -0.393191445109E+03    0.12717E-02   -0.37382E-03 13952   0.881E-01    0.523E-01
+DAV:  22    -0.393192907900E+03   -0.14628E-02   -0.11921E-03 13904   0.614E-01    0.308E-01
+DAV:  23    -0.393192606773E+03    0.30113E-03   -0.16916E-04 12352   0.235E-01    0.414E-01
+DAV:  24    -0.393192971749E+03   -0.36498E-03   -0.88423E-04 14808   0.424E-01    0.645E-02
+DAV:  25    -0.393192975411E+03   -0.36615E-05   -0.32739E-04 14672   0.120E-01    0.131E-01
+DAV:  26    -0.393192952476E+03    0.22935E-04   -0.18808E-05 10120   0.486E-02    0.149E-01
+DAV:  27    -0.393193000601E+03   -0.48124E-04   -0.17768E-05  8968   0.886E-02    0.560E-02
+DAV:  28    -0.393193009439E+03   -0.88389E-05   -0.70290E-05 11752   0.849E-02    0.303E-02
+DAV:  29    -0.393193010232E+03   -0.79293E-06   -0.11131E-05  9000   0.509E-02    0.936E-03
+DAV:  30    -0.393193010891E+03   -0.65847E-06   -0.28797E-06  5984   0.129E-02
+   1 F= -.39319301E+03 E0= -.39319293E+03  d E =-.154600E-03  mag=    48.0780
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F9251F16B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[7358,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** FM calculation continues from both CHGCAR and WAVECAR ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of bands has changed, file:   460 present:   492
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ random initialization beyond band          461
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.383118064399E+03   -0.38312E+03   -0.21347E+02  9088   0.222E+02    0.469E+01
+DAV:   2    -0.389702108871E+03   -0.65840E+01   -0.37222E+01 15008   0.792E+01    0.233E+01
+DAV:   3    -0.393135724402E+03   -0.34336E+01   -0.10634E+01 15008   0.300E+01    0.750E+00
+DAV:   4    -0.393228632479E+03   -0.92908E-01   -0.41956E+00 12784   0.302E+01    0.281E+00
+DAV:   5    -0.393219815947E+03    0.88165E-02   -0.10989E+00 12816   0.162E+01    0.162E+00
+DAV:   6    -0.393222173284E+03   -0.23573E-02   -0.15774E-01 14464   0.389E+00    0.105E+00
+DAV:   7    -0.393220973805E+03    0.11995E-02   -0.44306E-02 14192   0.148E+00    0.461E-01
+DAV:   8    -0.393222216254E+03   -0.12424E-02   -0.99024E-03 13232   0.974E-01    0.191E-01
+DAV:   9    -0.393222447233E+03   -0.23098E-03   -0.15394E-03 14704   0.444E-01    0.905E-02
+DAV:  10    -0.393222470108E+03   -0.22875E-04   -0.46133E-04 13428   0.200E-01    0.539E-02
+DAV:  11    -0.393222491523E+03   -0.21416E-04   -0.98305E-05 13936   0.898E-02    0.219E-02
+DAV:  12    -0.393222488274E+03    0.32494E-05   -0.19341E-05 10552   0.435E-02    0.129E-02
+DAV:  13    -0.393222485268E+03    0.30063E-05   -0.64802E-06  8112   0.252E-02    0.527E-03
+DAV:  14    -0.393222482781E+03    0.24866E-05   -0.19398E-06  6448   0.154E-02    0.276E-03
+DAV:  15    -0.393222482136E+03    0.64459E-06   -0.59358E-07  5728   0.109E-02
+   1 F= -.39322248E+03 E0= -.39322242E+03  d E =-.129387E-03  mag=    43.1854
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F86D753CB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[368,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF1 calculation is performed from scratch ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.336461854204E+05    0.33646E+05   -0.22777E+05 13048   0.620E+03
+DAV:   2     0.137762546180E+05   -0.19870E+05   -0.17864E+05 13912   0.243E+03
+DAV:   3     0.446947770662E+04   -0.93068E+04   -0.87304E+04 16256   0.131E+03
+DAV:   4     0.104782576892E+04   -0.34217E+04   -0.31792E+04 20700   0.111E+03
+DAV:   5     0.311624920261E+01   -0.10447E+04   -0.91219E+03 21456   0.761E+02    0.151E+02
+DAV:   6    -0.293093258306E+03   -0.29621E+03   -0.33467E+03 21784   0.488E+02    0.390E+01
+DAV:   7    -0.367554312383E+03   -0.74461E+02   -0.98452E+02 20284   0.286E+02    0.237E+01
+DAV:   8    -0.385659235312E+03   -0.18105E+02   -0.26382E+02 20352   0.147E+02    0.127E+01
+DAV:   9    -0.391994372805E+03   -0.63351E+01   -0.70365E+01 18776   0.108E+02    0.104E+01
+DAV:  10    -0.392617729337E+03   -0.62336E+00   -0.15794E+01 20720   0.334E+01    0.436E+00
+DAV:  11    -0.392953894155E+03   -0.33616E+00   -0.25077E+00 20152   0.141E+01    0.281E+00
+DAV:  12    -0.392989942222E+03   -0.36048E-01   -0.43189E-01 20384   0.677E+00    0.897E-01
+DAV:  13    -0.392996514254E+03   -0.65720E-02   -0.74301E-02 20488   0.229E+00    0.432E-01
+DAV:  14    -0.392998127004E+03   -0.16128E-02   -0.26197E-02 21192   0.102E+00    0.252E-01
+DAV:  15    -0.392998308563E+03   -0.18156E-03   -0.54786E-03 19944   0.745E-01    0.165E-01
+DAV:  16    -0.392999377812E+03   -0.10692E-02   -0.62251E-03 21296   0.721E-01    0.297E-01
+DAV:  17    -0.392998501287E+03    0.87653E-03   -0.21295E-03 20376   0.443E-01    0.774E-02
+DAV:  18    -0.392998520307E+03   -0.19020E-04   -0.69768E-04 19528   0.173E-01    0.172E-02
+DAV:  19    -0.392998533867E+03   -0.13559E-04   -0.69333E-05 15664   0.974E-02    0.688E-03
+DAV:  20    -0.392998539427E+03   -0.55599E-05   -0.17507E-05 13360   0.408E-02    0.606E-03
+DAV:  21    -0.392998540153E+03   -0.72684E-06   -0.47885E-06  8272   0.254E-02
+   1 F= -.39299854E+03 E0= -.39299841E+03  d E =-.266304E-03  mag=     0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F4852FFCB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13434,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF1 calculation continues from WAVECAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of k-points has changed, file:     4 present:     6
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.535803221010E+03   -0.53580E+03   -0.84375E+02 19560   0.788E+02    0.149E+02
+DAV:   2    -0.470829654994E+03    0.64974E+02   -0.15668E+03 19280   0.524E+02    0.120E+02
+DAV:   3    -0.390754734189E+03    0.80075E+02   -0.47081E+02 16676   0.530E+02    0.269E+01
+DAV:   4    -0.393816121213E+03   -0.30614E+01   -0.73298E+01 20940   0.701E+01    0.126E+01
+DAV:   5    -0.392673722048E+03    0.11424E+01   -0.88702E+00 21344   0.398E+01    0.938E+00
+DAV:   6    -0.392738678599E+03   -0.64957E-01   -0.28320E+00 17952   0.267E+01    0.516E+00
+DAV:   7    -0.392748315255E+03   -0.96367E-02   -0.95649E-01 21248   0.122E+01    0.188E+00
+DAV:   8    -0.392811545682E+03   -0.63230E-01   -0.47003E-01 20792   0.483E+00    0.385E+00
+DAV:   9    -0.392738953129E+03    0.72593E-01   -0.93145E-01 19208   0.542E+00    0.168E+00
+DAV:  10    -0.392728679256E+03    0.10274E-01   -0.18878E-02 21904   0.186E+00    0.176E+00
+DAV:  11    -0.392641177467E+03    0.87502E-01   -0.63429E-02 21120   0.579E+00    0.334E+00
+DAV:  12    -0.392368373332E+03    0.27280E+00   -0.17421E+00 21280   0.114E+01    0.620E+00
+DAV:  13    -0.392296942258E+03    0.71431E-01   -0.90216E-02 21960   0.396E+00    0.609E+00
+DAV:  14    -0.392281314224E+03    0.15628E-01   -0.10571E-02 18240   0.143E+00    0.636E+00
+DAV:  15    -0.392635219613E+03   -0.35391E+00   -0.67060E-01 20368   0.149E+01    0.356E+00
+DAV:  16    -0.392724047656E+03   -0.88828E-01   -0.17074E-01 21984   0.473E+00    0.234E+00
+DAV:  17    -0.392862969547E+03   -0.13892E+00   -0.84547E-01 21320   0.775E+00    0.435E+00
+DAV:  18    -0.392922991492E+03   -0.60022E-01   -0.52083E-02 21736   0.287E+00    0.481E+00
+DAV:  19    -0.392787096187E+03    0.13590E+00   -0.17940E-01 20424   0.524E+00    0.278E+00
+DAV:  20    -0.392720869083E+03    0.66227E-01   -0.49057E-02 21856   0.419E+00    0.179E+00
+DAV:  21    -0.392602900237E+03    0.11797E+00   -0.89655E-02 21440   0.667E+00    0.378E+00
+DAV:  22    -0.392623110805E+03   -0.20211E-01   -0.21231E-02 20440   0.183E+00    0.392E+00
+DAV:  23    -0.392550574238E+03    0.72537E-01   -0.21131E-01 21392   0.334E+00    0.371E+00
+DAV:  24    -0.392550608109E+03   -0.33870E-04   -0.47896E-03 20440   0.581E-01    0.376E+00
+DAV:  25    -0.392486792087E+03    0.63816E-01   -0.16165E-01 21544   0.262E+00    0.379E+00
+DAV:  26    -0.392481332149E+03    0.54599E-02   -0.39026E-03 21856   0.554E-01    0.392E+00
+DAV:  27    -0.392446564357E+03    0.34768E-01   -0.33070E-03 21184   0.132E+00    0.463E+00
+DAV:  28    -0.392517168999E+03   -0.70605E-01   -0.13289E-02 20392   0.316E+00    0.365E+00
+DAV:  29    -0.392514487277E+03    0.26817E-02   -0.34925E-03 21624   0.424E-01    0.372E+00
+DAV:  30    -0.392503851950E+03    0.10635E-01   -0.30778E-04 20928   0.344E-01    0.377E+00
+DAV:  31    -0.392475817533E+03    0.28034E-01   -0.18307E-03 20432   0.106E+00    0.373E+00
+DAV:  32    -0.392496504579E+03   -0.20687E-01   -0.19619E-02 20824   0.102E+00    0.367E+00
+DAV:  33    -0.392488891071E+03    0.76135E-02   -0.11602E-02 21184   0.831E-01    0.380E+00
+DAV:  34    -0.392488810425E+03    0.80646E-04   -0.41948E-04 21784   0.237E-01    0.380E+00
+DAV:  35    -0.392487913842E+03    0.89658E-03   -0.38899E-05 17936   0.901E-02    0.379E+00
+DAV:  36    -0.392490667613E+03   -0.27538E-02   -0.29155E-05 16136   0.151E-01    0.376E+00
+DAV:  37    -0.392516096699E+03   -0.25429E-01   -0.15466E-02 19928   0.118E+00    0.337E+00
+DAV:  38    -0.392571992816E+03   -0.55896E-01   -0.12020E-01 20808   0.236E+00    0.321E+00
+DAV:  39    -0.392579757732E+03   -0.77649E-02   -0.50663E-03 21608   0.582E-01    0.347E+00
+DAV:  40    -0.392588873705E+03   -0.91160E-02   -0.66532E-04 21200   0.565E-01    0.320E+00
+DAV:  41    -0.392586187812E+03    0.26859E-02   -0.59697E-04 19984   0.622E-01    0.331E+00
+DAV:  42    -0.392590938003E+03   -0.47502E-02   -0.18715E-03 21280   0.548E-01    0.332E+00
+DAV:  43    -0.392603792396E+03   -0.12854E-01   -0.61521E-04 21536   0.553E-01    0.386E+00
+DAV:  44    -0.392641229726E+03   -0.37437E-01   -0.41593E-03 21176   0.154E+00    0.334E+00
+DAV:  45    -0.392654333571E+03   -0.13104E-01   -0.20864E-03 21872   0.666E-01    0.299E+00
+DAV:  46    -0.392665036884E+03   -0.10703E-01   -0.65880E-04 21712   0.580E-01    0.267E+00
+DAV:  47    -0.392673575775E+03   -0.85389E-02   -0.95430E-04 21608   0.551E-01    0.236E+00
+DAV:  48    -0.392673310415E+03    0.26536E-03   -0.21838E-04 16304   0.207E-01    0.237E+00
+DAV:  49    -0.392675697889E+03   -0.23875E-02   -0.78383E-05 20192   0.178E-01    0.228E+00
+DAV:  50    -0.392689066094E+03   -0.13368E-01   -0.10439E-03 20200   0.861E-01    0.182E+00
+DAV:  51    -0.392700550051E+03   -0.11484E-01   -0.18437E-03 21256   0.859E-01    0.248E+00
+DAV:  52    -0.392715109127E+03   -0.14559E-01   -0.17974E-03 21416   0.946E-01    0.194E+00
+DAV:  53    -0.392732742101E+03   -0.17633E-01   -0.39661E-03 21448   0.143E+00    0.157E+00
+DAV:  54    -0.392746856114E+03   -0.14114E-01   -0.29824E-03 21808   0.113E+00    0.199E+00
+DAV:  55    -0.392749934514E+03   -0.30784E-02   -0.62994E-04 19024   0.403E-01    0.185E+00
+DAV:  56    -0.392754159888E+03   -0.42254E-02   -0.47857E-04 21784   0.325E-01    0.163E+00
+DAV:  57    -0.392760880500E+03   -0.67206E-02   -0.60209E-04 21616   0.575E-01    0.131E+00
+DAV:  58    -0.392764173672E+03   -0.32932E-02   -0.47594E-04 21896   0.453E-01    0.130E+00
+DAV:  59    -0.392805630842E+03   -0.41457E-01   -0.34864E-01 20752   0.227E+00    0.402E+00
+DAV:  60    -0.392965108934E+03   -0.15948E+00   -0.11126E-01 21192   0.639E+00    0.257E+00
+DAV:  61    -0.392993038483E+03   -0.27930E-01   -0.75888E-02 21744   0.567E+00    0.167E+00
+DAV:  62    -0.392965616254E+03    0.27422E-01   -0.22766E-02 21568   0.325E+00    0.267E+00
+DAV:  63    -0.392968803109E+03   -0.31869E-02   -0.64457E-03 16496   0.109E+00    0.264E+00
+DAV:  64    -0.392958940902E+03    0.98622E-02   -0.14698E-03 21624   0.731E-01    0.280E+00
+DAV:  65    -0.392957764795E+03    0.11761E-02   -0.87579E-04 21920   0.616E-01    0.204E+00
+DAV:  66    -0.392958736566E+03   -0.97177E-03   -0.10333E-03 21944   0.703E-01    0.211E+00
+DAV:  67    -0.392991270621E+03   -0.32534E-01   -0.36134E-02 20432   0.525E+00    0.164E+00
+DAV:  68    -0.392985910498E+03    0.53601E-02   -0.66648E-03 21152   0.129E+00    0.174E+00
+DAV:  69    -0.392986008542E+03   -0.98045E-04   -0.56542E-04 19064   0.245E-01    0.174E+00
+DAV:  70    -0.392986285305E+03   -0.27676E-03   -0.97776E-05 18680   0.186E-01    0.182E+00
+DAV:  71    -0.392996784180E+03   -0.10499E-01   -0.21644E-03 20760   0.118E+00    0.162E+00
+DAV:  72    -0.393001940093E+03   -0.51559E-02   -0.63528E-03 21728   0.176E+00    0.130E+00
+DAV:  73    -0.392995817733E+03    0.61224E-02   -0.41534E-03 21752   0.134E+00    0.152E+00
+DAV:  74    -0.392992247867E+03    0.35699E-02   -0.81709E-04 19008   0.534E-01    0.162E+00
+DAV:  75    -0.392987808797E+03    0.44391E-02   -0.53615E-04 21584   0.339E-01    0.175E+00
+DAV:  76    -0.392989060883E+03   -0.12521E-02   -0.27140E-04 20104   0.457E-01    0.159E+00
+DAV:  77    -0.392995959227E+03   -0.68983E-02   -0.41692E-03 21304   0.157E+00    0.124E+00
+DAV:  78    -0.392995010370E+03    0.94886E-03   -0.74186E-04 21216   0.539E-01    0.126E+00
+DAV:  79    -0.392994972218E+03    0.38152E-04   -0.10768E-04 21424   0.182E-01    0.128E+00
+DAV:  80    -0.392991586091E+03    0.33861E-02   -0.61692E-04 20808   0.618E-01    0.142E+00
+DAV:  81    -0.392992856568E+03   -0.12705E-02   -0.26264E-04 21208   0.348E-01    0.129E+00
+DAV:  82    -0.392976481225E+03    0.16375E-01   -0.58993E-03 20192   0.206E+00    0.198E+00
+DAV:  83    -0.392980558353E+03   -0.40771E-02   -0.13252E-03 20928   0.420E-01    0.181E+00
+DAV:  84    -0.392984808205E+03   -0.42499E-02   -0.27406E-04 21464   0.353E-01    0.160E+00
+DAV:  85    -0.392987504728E+03   -0.26965E-02   -0.17705E-04 21784   0.266E-01    0.147E+00
+DAV:  86    -0.392988050866E+03   -0.54614E-03   -0.33757E-05 14560   0.915E-02    0.144E+00
+DAV:  87    -0.392979081858E+03    0.89690E-02   -0.85452E-04 19488   0.840E-01    0.190E+00
+DAV:  88    -0.392977188574E+03    0.18933E-02   -0.36908E-04 21704   0.207E-01    0.198E+00
+DAV:  89    -0.392979037565E+03   -0.18490E-02   -0.44432E-05 18112   0.181E-01    0.190E+00
+DAV:  90    -0.392981889703E+03   -0.28521E-02   -0.10876E-04 19552   0.246E-01    0.176E+00
+DAV:  91    -0.392982536336E+03   -0.64663E-03   -0.30033E-05 16720   0.779E-02    0.173E+00
+DAV:  92    -0.392989855360E+03   -0.73190E-02   -0.69006E-04 20272   0.738E-01    0.130E+00
+DAV:  93    -0.392990632772E+03   -0.77741E-03   -0.23941E-04 20736   0.150E-01    0.126E+00
+DAV:  94    -0.392991171243E+03   -0.53847E-03   -0.18342E-05 14624   0.790E-02    0.122E+00
+DAV:  95    -0.392991712138E+03   -0.54090E-03   -0.48131E-05 17672   0.814E-02    0.118E+00
+DAV:  96    -0.392992927286E+03   -0.12151E-02   -0.59254E-05 17448   0.163E-01    0.109E+00
+DAV:  97    -0.392994287144E+03   -0.13599E-02   -0.19858E-04 19544   0.231E-01    0.101E+00
+DAV:  98    -0.392995191993E+03   -0.90485E-03   -0.84520E-05 18600   0.180E-01    0.915E-01
+DAV:  99    -0.392994917557E+03    0.27444E-03   -0.22867E-05 15648   0.848E-02    0.929E-01
+DAV: 100    -0.392994736209E+03    0.18135E-03   -0.10063E-05 13280   0.492E-02
+   1 F= -.39299474E+03 E0= -.39299474E+03  d E =-.269061E-21  mag=     0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007FC368E65B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[17907,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF1 calculation continues from CHGCAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.337119455881E+05    0.33712E+05   -0.23293E+05 12852   0.676E+03
+DAV:   2     0.134970591796E+05   -0.20215E+05   -0.18071E+05 13560   0.252E+03
+DAV:   3     0.411526858338E+04   -0.93818E+04   -0.88822E+04 16048   0.127E+03
+DAV:   4     0.878070447501E+03   -0.32372E+04   -0.30343E+04 20392   0.107E+03
+DAV:   5     0.766252095057E+01   -0.87041E+03   -0.78125E+03 21448   0.700E+02    0.136E+02
+DAV:   6    -0.349539709946E+03   -0.35720E+03   -0.38937E+03 20964   0.746E+02    0.770E+01
+DAV:   7    -0.395033921544E+03   -0.45494E+02   -0.20488E+03 18840   0.475E+02    0.570E+01
+DAV:   8    -0.405021975309E+03   -0.99881E+01   -0.40171E+02 20352   0.169E+02    0.419E+01
+DAV:   9    -0.394209084192E+03    0.10813E+02   -0.75478E+01 19592   0.680E+01    0.262E+01
+DAV:  10    -0.393981627085E+03    0.22746E+00   -0.15843E+01 20368   0.361E+01    0.195E+01
+DAV:  11    -0.393083242159E+03    0.89838E+00   -0.68471E+00 22040   0.200E+01    0.101E+01
+DAV:  12    -0.393050265279E+03    0.32977E-01   -0.90138E-01 19624   0.104E+01    0.829E+00
+DAV:  13    -0.392997990471E+03    0.52275E-01   -0.79676E-01 21296   0.715E+00    0.364E+00
+DAV:  14    -0.392998840977E+03   -0.85051E-03   -0.14432E-01 18456   0.440E+00    0.203E+00
+DAV:  15    -0.393001702165E+03   -0.28612E-02   -0.22741E-02 20504   0.141E+00    0.111E+00
+DAV:  16    -0.392999857490E+03    0.18447E-02   -0.54159E-03 19624   0.105E+00    0.693E-01
+DAV:  17    -0.392999364494E+03    0.49300E-03   -0.15045E-03 21984   0.302E-01    0.449E-01
+DAV:  18    -0.392999250528E+03    0.11397E-03   -0.58622E-04 20896   0.295E-01    0.251E-01
+DAV:  19    -0.392999240772E+03    0.97559E-05   -0.11496E-04 20200   0.106E-01    0.151E-01
+DAV:  20    -0.392999301635E+03   -0.60864E-04   -0.44379E-05 17368   0.108E-01    0.954E-02
+DAV:  21    -0.392999243456E+03    0.58180E-04   -0.20994E-05 14432   0.102E-01    0.672E-02
+DAV:  22    -0.392999192446E+03    0.51009E-04   -0.15856E-04 17400   0.119E-01    0.190E-02
+DAV:  23    -0.392999201869E+03   -0.94230E-05   -0.84920E-05 16040   0.546E-02    0.775E-03
+DAV:  24    -0.392999201036E+03    0.83313E-06   -0.19576E-06  7808   0.196E-02
+   1 F= -.39299920E+03 E0= -.39299920E+03  d E =-.921799E-25  mag=     0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007FDD1269FB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[30935,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF1 calculation continues from both CHGCAR and WAVECAR ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of k-points has changed, file:     4 present:     6
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.356322431415E+03   -0.35632E+03   -0.55793E+02 17520   0.666E+02    0.340E+01
+DAV:   2    -0.389990651343E+03   -0.33668E+02   -0.26363E+02 18968   0.967E+01    0.164E+01
+DAV:   3    -0.392138389980E+03   -0.21477E+01   -0.28305E+01 18040   0.866E+01    0.449E+00
+DAV:   4    -0.392536258863E+03   -0.39787E+00   -0.60725E+00 19904   0.250E+01    0.491E+00
+DAV:   5    -0.392697934232E+03   -0.16168E+00   -0.86886E-01 20976   0.117E+01    0.284E+00
+DAV:   6    -0.392771353257E+03   -0.73419E-01   -0.36704E-01 21264   0.516E+00    0.219E+00
+DAV:   7    -0.392810537288E+03   -0.39184E-01   -0.29656E-01 21064   0.336E+00    0.296E+00
+DAV:   8    -0.392750101532E+03    0.60436E-01   -0.26749E-01 19304   0.445E+00    0.184E+00
+DAV:   9    -0.392708654336E+03    0.41447E-01   -0.31592E-02 21544   0.363E+00    0.203E+00
+DAV:  10    -0.392592729109E+03    0.11593E+00   -0.62997E-02 21488   0.593E+00    0.411E+00
+DAV:  11    -0.392737834034E+03   -0.14510E+00   -0.15627E-01 20400   0.807E+00    0.235E+00
+DAV:  12    -0.392814186318E+03   -0.76352E-01   -0.54747E-01 21472   0.558E+00    0.391E+00
+DAV:  13    -0.392867244915E+03   -0.53059E-01   -0.22292E-02 22032   0.249E+00    0.420E+00
+DAV:  14    -0.392949523165E+03   -0.82278E-01   -0.20382E-02 21480   0.339E+00    0.297E+00
+DAV:  15    -0.392945208471E+03    0.43147E-02   -0.61717E-03 19512   0.135E+00    0.310E+00
+DAV:  16    -0.392957875478E+03   -0.12667E-01   -0.20114E-03 21464   0.947E-01    0.264E+00
+DAV:  17    -0.392996518654E+03   -0.38643E-01   -0.40075E-02 20864   0.553E+00    0.635E-01
+DAV:  18    -0.392998214274E+03   -0.16956E-02   -0.89910E-03 21008   0.966E-01    0.421E-01
+DAV:  19    -0.392999028827E+03   -0.81455E-03   -0.70321E-04 19920   0.544E-01    0.183E-01
+DAV:  20    -0.392999095824E+03   -0.66997E-04   -0.96335E-04 21240   0.620E-01    0.172E-01
+DAV:  21    -0.392999154478E+03   -0.58654E-04   -0.36792E-04 20736   0.455E-01    0.791E-02
+DAV:  22    -0.392998955144E+03    0.19933E-03   -0.25098E-04 21336   0.342E-01    0.191E-01
+DAV:  23    -0.392999065986E+03   -0.11084E-03   -0.47188E-05 18448   0.157E-01    0.137E-01
+DAV:  24    -0.392999171744E+03   -0.10576E-03   -0.46896E-05 18320   0.135E-01    0.668E-02
+DAV:  25    -0.392999169892E+03    0.18521E-05   -0.94279E-06 12440   0.419E-02    0.719E-02
+DAV:  26    -0.392999198168E+03   -0.28277E-04   -0.10137E-05 13008   0.927E-02    0.212E-02
+DAV:  27    -0.392999201457E+03   -0.32890E-05   -0.27461E-06  7440   0.312E-02    0.792E-03
+DAV:  28    -0.392999201823E+03   -0.36581E-06   -0.24404E-06  7936   0.172E-02
+   1 F= -.39299920E+03 E0= -.39299920E+03  d E =-.123209E-31  mag=     0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F75BE167B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[32369,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF2 calculation is performed from scratch ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.336062547187E+05    0.33606E+05   -0.22794E+05 12984   0.618E+03
+DAV:   2     0.137168158955E+05   -0.19889E+05   -0.17898E+05 14008   0.243E+03
+DAV:   3     0.442815827665E+04   -0.92887E+04   -0.87142E+04 16256   0.131E+03
+DAV:   4     0.102405281895E+04   -0.34041E+04   -0.31674E+04 20792   0.111E+03
+DAV:   5    -0.213694801406E+01   -0.10262E+04   -0.89335E+03 21456   0.756E+02    0.149E+02
+DAV:   6    -0.296808999854E+03   -0.29467E+03   -0.33632E+03 21808   0.490E+02    0.453E+01
+DAV:   7    -0.380134927982E+03   -0.83326E+02   -0.10255E+03 20640   0.292E+02    0.296E+01
+DAV:   8    -0.393546662383E+03   -0.13412E+02   -0.27896E+02 21536   0.153E+02    0.161E+01
+DAV:   9    -0.400059023783E+03   -0.65124E+01   -0.77488E+01 17032   0.149E+02    0.987E+00
+DAV:  10    -0.400964635596E+03   -0.90561E+00   -0.17284E+01 20944   0.373E+01    0.434E+00
+DAV:  11    -0.401295907433E+03   -0.33127E+00   -0.24935E+00 19568   0.167E+01    0.232E+00
+DAV:  12    -0.401376080947E+03   -0.80174E-01   -0.50152E-01 20456   0.480E+00    0.932E-01
+DAV:  13    -0.401384078398E+03   -0.79975E-02   -0.73477E-02 19968   0.313E+00    0.565E-01
+DAV:  14    -0.401386025601E+03   -0.19472E-02   -0.16935E-02 21616   0.118E+00    0.340E-01
+DAV:  15    -0.401387160382E+03   -0.11348E-02   -0.46300E-03 19176   0.652E-01    0.166E-01
+DAV:  16    -0.401387199550E+03   -0.39168E-04   -0.11212E-03 20904   0.416E-01    0.642E-02
+DAV:  17    -0.401387204604E+03   -0.50533E-05   -0.40320E-04 18840   0.172E-01    0.133E-02
+DAV:  18    -0.401387218688E+03   -0.14084E-04   -0.15025E-04 17176   0.107E-01    0.106E-02
+DAV:  19    -0.401387221415E+03   -0.27273E-05   -0.32144E-05 13152   0.622E-02    0.673E-03
+DAV:  20    -0.401387225434E+03   -0.40192E-05   -0.14566E-05 12576   0.375E-02    0.463E-03
+DAV:  21    -0.401387225461E+03   -0.26310E-07   -0.43330E-06  8272   0.279E-02
+   1 F= -.40138723E+03 E0= -.40138723E+03  d E =0.000000E+00  mag=    -0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007FB2D5E43B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[32051,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF2 calculation continues from WAVECAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of k-points has changed, file:     4 present:     6
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.469106022945E+03   -0.46911E+03   -0.26227E+03 19376   0.136E+03    0.171E+02
+DAV:   2    -0.494581523661E+03   -0.25476E+02   -0.23383E+03 18736   0.602E+02    0.123E+02
+DAV:   3    -0.393954879242E+03    0.10063E+03   -0.67684E+02 15532   0.615E+02    0.387E+01
+DAV:   4    -0.405120584901E+03   -0.11166E+02   -0.13485E+02 21448   0.101E+02    0.221E+01
+DAV:   5    -0.401223026594E+03    0.38976E+01   -0.19349E+01 21408   0.620E+01    0.106E+01
+DAV:   6    -0.401629160775E+03   -0.40613E+00   -0.50040E+00 19880   0.234E+01    0.772E+00
+DAV:   7    -0.401395223568E+03    0.23394E+00   -0.91147E-01 17560   0.193E+01    0.283E+00
+DAV:   8    -0.401383480629E+03    0.11743E-01   -0.43894E-01 21672   0.715E+00    0.960E-01
+DAV:   9    -0.401386619625E+03   -0.31390E-02   -0.47288E-02 19448   0.278E+00    0.515E-01
+DAV:  10    -0.401388686601E+03   -0.20670E-02   -0.16589E-02 21216   0.954E-01    0.440E-01
+DAV:  11    -0.401387574624E+03    0.11120E-02   -0.27498E-03 19512   0.947E-01    0.222E-01
+DAV:  12    -0.401387322286E+03    0.25234E-03   -0.92188E-04 21384   0.200E-01    0.130E-01
+DAV:  13    -0.401387248016E+03    0.74270E-04   -0.29157E-04 20672   0.113E-01    0.588E-02
+DAV:  14    -0.401387228099E+03    0.19918E-04   -0.19013E-04 19776   0.189E-01    0.185E-02
+DAV:  15    -0.401387230634E+03   -0.25353E-05   -0.35533E-05 14672   0.668E-02    0.153E-02
+DAV:  16    -0.401387228607E+03    0.20268E-05   -0.21853E-06  7920   0.204E-02    0.811E-03
+DAV:  17    -0.401387227808E+03    0.79890E-06   -0.20975E-06  8000   0.140E-02
+   1 F= -.40138723E+03 E0= -.40138723E+03  d E =0.000000E+00  mag=    -0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007FBFC91B6B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[31807,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF2 calculation continues from CHGCAR only ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ WAVECAR not read
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.337186963255E+05    0.33719E+05   -0.23334E+05 12796   0.683E+03
+DAV:   2     0.134268472091E+05   -0.20292E+05   -0.18134E+05 13496   0.253E+03
+DAV:   3     0.404623583252E+04   -0.93806E+04   -0.88960E+04 16080   0.126E+03
+DAV:   4     0.834017540513E+03   -0.32122E+04   -0.30134E+04 20484   0.106E+03
+DAV:   5    -0.172276115899E+02   -0.85125E+03   -0.76720E+03 21472   0.690E+02    0.138E+02
+DAV:   6    -0.365629370702E+03   -0.34840E+03   -0.39766E+03 20860   0.855E+02    0.831E+01
+DAV:   7    -0.406121478202E+03   -0.40492E+02   -0.22386E+03 18832   0.485E+02    0.666E+01
+DAV:   8    -0.419986003516E+03   -0.13865E+02   -0.41959E+02 20472   0.176E+02    0.621E+01
+DAV:   9    -0.422251203338E+03   -0.22652E+01   -0.69394E+01 18496   0.754E+01    0.571E+01
+DAV:  10    -0.403283756889E+03    0.18967E+02   -0.46645E+01 22064   0.771E+01    0.225E+01
+DAV:  11    -0.398352865133E+03    0.49309E+01   -0.31920E+01 22080   0.559E+01    0.246E+01
+DAV:  12    -0.400802010214E+03   -0.24491E+01   -0.56763E+00 20800   0.381E+01    0.151E+01
+DAV:  13    -0.401392254547E+03   -0.59024E+00   -0.13575E+00 21480   0.107E+01    0.126E+01
+DAV:  14    -0.401505837333E+03   -0.11358E+00   -0.50911E-01 20568   0.119E+01    0.798E+00
+DAV:  15    -0.401450591404E+03    0.55246E-01   -0.18356E-01 17880   0.758E+00    0.559E+00
+DAV:  16    -0.401379406908E+03    0.71184E-01   -0.24714E-01 21400   0.615E+00    0.211E+00
+DAV:  17    -0.401386665877E+03   -0.72590E-02   -0.52292E-02 21632   0.379E+00    0.131E+00
+DAV:  18    -0.401386056615E+03    0.60926E-03   -0.88673E-03 16576   0.183E+00    0.710E-01
+DAV:  19    -0.401387986240E+03   -0.19296E-02   -0.11730E-02 20784   0.143E+00    0.358E-01
+DAV:  20    -0.401387735029E+03    0.25121E-03   -0.21272E-03 19144   0.546E-01    0.340E-01
+DAV:  21    -0.401387328636E+03    0.40639E-03   -0.48897E-04 19112   0.214E-01    0.198E-01
+DAV:  22    -0.401387353587E+03   -0.24951E-04   -0.22923E-04 16696   0.178E-01    0.138E-01
+DAV:  23    -0.401387264552E+03    0.89035E-04   -0.11487E-04 16400   0.140E-01    0.799E-02
+DAV:  24    -0.401387216736E+03    0.47815E-04   -0.25885E-04 16992   0.148E-01    0.410E-02
+DAV:  25    -0.401387229859E+03   -0.13123E-04   -0.74973E-05 15944   0.795E-02    0.136E-02
+DAV:  26    -0.401387230818E+03   -0.95885E-06   -0.48146E-06  9784   0.254E-02
+   1 F= -.40138723E+03 E0= -.40138723E+03  d E =-.457064-184  mag=    -0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F2AE39EBB97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[29462,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
+[1;31m*** AF2 calculation continues from both CHGCAR and WAVECAR ***[0m
+Using device 0 (rank 0, local rank 0, local size 1) : Quadro GV100
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+  
+ *******************************************************************************
+  You are running the GPU port of VASP! When publishing results obtained with
+  this version, please cite:
+   - M. Hacene et al., http://dx.doi.org/10.1002/jcc.23096
+   - M. Hutchinson and M. Widom, http://dx.doi.org/10.1016/j.cpc.2012.02.017
+  
+  in addition to the usual required citations (see manual).
+  
+  GPU developers: A. Anciaux-Sedrakian, C. Angerer, and M. Hutchinson.
+ *******************************************************************************
+  
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Oct 10 2019 09:51:33) complex          
+  
+ POSCAR found type information on POSCAR  Ni O 
+ POSCAR found :  2 types and      64 ions
+ LDA part: xc-table for Pade appr. of Perdew
+  
+ WARNING: The GPU port of VASP has been extensively
+ tested for: ALGO=Normal, Fast, and VeryFast.
+ Other algorithms may produce incorrect results or
+ yield suboptimal performance. Handle with care!
+  
+ found WAVECAR, reading the header
+  number of k-points has changed, file:     4 present:     6
+  trying to continue reading WAVECAR, but it might fail
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+creating 32 CUDA streams...
+creating 32 CUFFT plans with grid size 50 x 50 x 50...
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ No down-spin wavefunctions found --> setting down-spin equal up-spin ...
+ charge-density read from file: NiO                                     
+ magnetization density of overlapping atoms calculated
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.286662804636E+03   -0.28666E+03   -0.25517E+03 15496   0.134E+03    0.331E+01
+DAV:   2    -0.395594854327E+03   -0.10893E+03   -0.97273E+02 18816   0.171E+02    0.218E+01
+DAV:   3    -0.400024871745E+03   -0.44300E+01   -0.70598E+01 17128   0.114E+02    0.121E+01
+DAV:   4    -0.401537038179E+03   -0.15122E+01   -0.18791E+01 19200   0.514E+01    0.861E+00
+DAV:   5    -0.401367802643E+03    0.16924E+00   -0.27253E+00 20264   0.205E+01    0.350E+00
+DAV:   6    -0.401370859049E+03   -0.30564E-02   -0.58751E-01 21376   0.979E+00    0.126E+00
+DAV:   7    -0.401385373953E+03   -0.14515E-01   -0.11478E-01 19160   0.400E+00    0.363E-01
+DAV:   8    -0.401387078499E+03   -0.17045E-02   -0.20026E-02 19736   0.145E+00    0.237E-01
+DAV:   9    -0.401387214630E+03   -0.13613E-03   -0.38878E-03 19976   0.626E-01    0.124E-01
+DAV:  10    -0.401387219789E+03   -0.51594E-05   -0.91021E-04 21528   0.275E-01    0.490E-02
+DAV:  11    -0.401387241133E+03   -0.21343E-04   -0.25734E-04 20224   0.187E-01    0.338E-02
+DAV:  12    -0.401387239506E+03    0.16269E-05   -0.68138E-05 17232   0.975E-02    0.123E-02
+DAV:  13    -0.401387232040E+03    0.74660E-05   -0.17164E-05  9952   0.432E-02    0.753E-03
+DAV:  14    -0.401387229721E+03    0.23189E-05   -0.64436E-06  9184   0.379E-02    0.154E-03
+DAV:  15    -0.401387229286E+03    0.43516E-06   -0.25647E-06  8752   0.129E-02
+   1 F= -.40138723E+03 E0= -.40138723E+03  d E =0.000000E+00  mag=    -0.0000
+ writing wavefunctions
+forrtl: severe (173): A pointer passed to DEALLOCATE points to an object that cannot be deallocated
+Image              PC                Routine            Line        Source             
+vasp_gpu           0000000005CF16C9  Unknown               Unknown  Unknown
+vasp_gpu           00000000016DD14C  MAIN__                   4545  main.F
+vasp_gpu           0000000000414F42  Unknown               Unknown  Unknown
+libc-2.27.so       00007F0209650B97  __libc_start_main     Unknown  Unknown
+vasp_gpu           0000000000414E2A  Unknown               Unknown  Unknown
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[30584,1],0]
+  Exit code:    173
+--------------------------------------------------------------------------
